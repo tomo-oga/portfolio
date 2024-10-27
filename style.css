@@ -38,8 +38,9 @@ header{
     font-weight: 800;
     text-wrap: nowrap;
     align-self: left;
+    transition: 0.3s ease-in-out;
 }
-.logo:hover{
+.name:hover{
     transform: scale(1.1);
 }
 .nav-links{
@@ -92,27 +93,57 @@ section{
     width: 100%;
     position: relative;
 }
-.about{
+.home{
     display: flex;
     align-items: center;
     justify-content: center;
     text-wrap: nowrap;
     background-color: rgb(220, 220, 220);
 }
-.about .about-card{
+
+.about-card{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10rem;
-    padding: 7rem;
+    padding: 6rem;
     background-color: white;
     border-radius: 2rem;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
-.about img{
+.photo-link{
+    position: relative;
+    width: fit-content;
+}
+.photo-link img{
     width: 30vw;
     border-radius: 50%;
 }
+.about photo-link{
+    position: relative;
+    text-align: center;
+    color: white;
+    text-align: center;
+}
+.photo-link .read-more{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.photo-link:hover {
+    filter: brightness(0.8);
+    transform: scale(1.02);
+}
+.photo-link:hover .read-more{
+    opacity: 1;
+}
+
 .info-box{
     display: flex;
     flex-direction: column;
@@ -132,7 +163,7 @@ section{
     font-weight: 600;
 }
 .info-box span{
-    background: var(--my-gardient);
+    background: var(--gradient);
     background-clip: text;
     color: transparent;
     font-size: 2rem;
@@ -286,7 +317,7 @@ section{
 .contact span{
     font-size: 2rem;
     font-weight: 500;
-    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    background: var(--gradient);
     background-clip: text;
     color: transparent;
 }
@@ -327,3 +358,28 @@ section{
     margin-right: auto;
 }
 
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.about span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+.question-card{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.question{
+    width: 30vh;
+}

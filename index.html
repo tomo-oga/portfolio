@@ -39,44 +39,74 @@
         </a>
     </header>
 
-    <section id="about" class="about">
-        <div class="about-card">
-            <img src="resources/profile-transformed.jpeg" alt="">
-            
-            <div class="info-box">
-
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>Tomo Oga</h1>
-                    <span>ML/AI Researcher</span>
-                </div>
-
-                <div class="btn-group">
-                    <a href="resources/resume.pdf" download>
-                        <div class="btn">Download CV</div>
+    <section id="home" class="home">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <!-- Front Side of Card -->
+            <div class="flip-card-front">
+                <div class="about-card">
+                    <a href="#about">
+                        <div class="photo-link" id="photo-link">
+                            <img src="resources/profile-transformed.jpeg" alt="">
+                            <div class="read-more">Read More...</div>
+                        </div>
                     </a>
-                    
-                    <a href="#contact">
-                        <div class="btn">Contact</div>
-                    </a>
-                </div>
-
-                <div class="socials">
-                    <a href="https://github.com/tomo-oga" target="_blank">
-                        <i class="fa-brands fa-github" id="gh-button"></i>
-                    </a>
-                    <a href="mailto:oga.t@northeastern.edu" target="_blank">
-                        <i class="fa-solid fa-envelope" id="email-button"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/tomo-oga" target="_blank">
-                        <i class="fa-brands fa-linkedin" id="li-button"></i>
-                    </a>
+                    <div class="info-box">
+                        <div class="text">
+                            <h3>Hi, I'm</h3>
+                            <h1>Tomo Oga</h1>
+                            <span>ML/AI Researcher</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="resources/resume.pdf" download>
+                                <div class="btn">Download CV</div>
+                            </a>
+                            <a href="#contact">
+                                <div class="btn">Contact</div>
+                            </a>
+                        </div>
+                        <div class="socials">
+                            <a href="https://github.com/tomo-oga" target="_blank">
+                                <i class="fa-brands fa-github" id="gh-button"></i>
+                            </a>
+                            <a href="mailto:oga.t@northeastern.edu" target="_blank">
+                                <i class="fa-solid fa-envelope" id="email-button"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/tomo-oga" target="_blank">
+                                <i class="fa-brands fa-linkedin" id="li-button"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             
         </div>
+    </div>
     </section>
 
+    <section id="about" class="about">
+        <h2 class="section-title">More About Me.</h2>
+        <div class="question-card">
+            <span>Who Am I?</span>
+            <p> Hi! My name is Tomo. I'm 19 years old and grew up in the greater boston area. I am a current second year at Northeastern University, and
+                I'm a passionate Data Science student at Northeastern University, driven by a deep interest in machine learning, knowledge
+                assembly, and data engineering. I am an ML/AI Research Assistant at the Gyori Lab for Computational Biomedicine, where I get to 
+                apply my interests and knowledge of artificial intelligence to real-life biomedical applications. 
+            </p>
+        </div>
+
+        <div class="question-card">
+            <span>What are you currently working on?</span>
+            <p>For Gyori Lab, currently I am trying to find methods to extract genetic mutations from clinical trial inclusion/exclusion criteria.
+                In this way, we could theoretically create BioEntities that reflect these genetic mutations, and provide better oncogenetic precision medicine
+                to patients with cancer. Outside of the lab, I had finished a project on providing an implementation on a ConvLSTM layer for Apple's array framework library known as MLX.
+                I am in the process of writing documentation, and cleaning up my code in order to publish it as a real library.
+            </p>
+        </div>
+
+        
+        
+    </section>
     <section id="experience" class="experience">
         <h2 class="section-title">Experience</h2>
         <div class="experience-info">
@@ -128,9 +158,9 @@
             <h3>Send me a message.</h3>
             
                 
-            <form action="mailto:tomo.oga@example.com" method="post" enctype="text/plain", id="email-form">
-                <textarea name="email" rows="1" cols="80" placeholder="Your email here..." id="email-box"></textarea>
-                <textarea name="message" rows="5" cols="80" placeholder="Your message here..." id="message-box"></textarea>
+            <form action="https://formspree.io/f/meoqezeb" method="post" id="email-form">
+                <input type="email" name="email" placeholder="Your email here..." id="email-box" required>
+                <textarea name="message" rows="5" cols="80" placeholder="Your message here..." id="message-box" required></textarea>
                 
                 <input type="submit" value="Send" class="visit-btn">
             </form>
