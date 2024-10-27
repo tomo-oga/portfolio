@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+:root {
+    --gradient: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+}
+
+header{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5em;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.9rem;
+    z-index: 1;
+    width: 90vw;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+
+
+}
+.name {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-wrap: nowrap;
+    align-self: left;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+li a{
+    position: relative;
+    color: black;
+    font-weight: 400;
+}
+li a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    height: 5px;
+    top: 20px;
+    border-radius: 1rem;
+    transition: 0.3s ;
+    background: var(--gradient)
+
+}
+li a:hover::before{
+    width: 100%;
+}
+.visit-btn{
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255))
+}
+.visit-btn:hover{
+    background: linear-gradient(to right, rgb(0, 88, 204), rgb(204, 0, 204))
+}
+#bar-icon{
+    font-size: 2rem;
+    display:none
+}
+
+section{
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    background-color: rgb(220, 220, 220);
+}
+.about .about-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 7rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+.about img{
+    width: 30vw;
+    border-radius: 50%;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    
+}
+.info-box h3{
+    font-size: 1.8rem;
+    font-weight: 50;
+    opacity: 0.8;
+}
+.info-box h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.info-box span{
+    background: var(--my-gardient);
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+.btn-group{
+    display: flex;
+    gap: 1rem;
+}
+.btn{
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    color: black;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+.socials{
+    display: flex;
+    gap: 2rem;
+}
+.socials i{
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: black
+}
+.socials i:hover{
+    transform: scale(1.1);
+}
+#gh-button:hover{
+    color: rgb(187, 0, 255);
+}
+#li-button:hover{
+    color: rgb(0, 110, 255);
+}
+#email-button:hover{
+    color: rgb(94, 55, 255)
+}
+
+.section-title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.experience-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.experience img{
+    width: 30vw;
+    border-radius: 2rem;
+    border: 10px solid white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.experience img:hover{
+    transform: scale(1.02);
+}
+.grid{
+    display: grid;
+    gap: 2rem;
+}
+.grid-card{
+    border-radius: 3em;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+
+
+}
+.grid-card:hover{
+    transform: scale(1.02);
+    
+}
+.grid-card span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+.grid-card h3{
+    font-size: 1rem;
+    font-weight: 1;
+    color: gray
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.project-card{
+    border-radius: 3em;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    background-color: white;
+    gap: 1rem;
+    
+}
+.project-card:hover{
+    transform: scale(1.02);
+}
+.project-card span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+.project-card h3{
+    font-size: 1rem;
+    font-weight: 1;
+    color: gray
+}
+.project-card img{
+    width: 40vw;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 2rem;
+    padding: 3rem;
+
+}
+.contact span{
+    font-size: 2rem;
+    font-weight: 500;
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+    background-clip: text;
+    color: transparent;
+}
+.contact h3{
+    font-size: 1rem;
+    font-weight: 1;
+    color: gray;
+    padding-bottom: 1rem;
+}
+#email-box{
+    width: 40vw;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#message-box{
+    width: 40vw;
+    padding: 0.5rem;
+    border-radius: 10px;
+    
+}
+#email-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.contact input{
+    width: 40vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+}
+.contact textarea{
+    margin-left: auto;
+    margin-right: auto;
+}
+

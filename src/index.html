@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tomo-oga: My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="name"><span>Tomo Oga</span></a>
+
+        <u1 class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            
+        </u1>
+
+        <i class="fa-solid fa-bars" id="bar-icon"></i>
+
+        <a href="https://github.com/tomo-oga" target="_blank">
+            <button class="visit-btn">Visit Github</button>
+        </a>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-card">
+            <img src="resources/profile-transformed.jpeg" alt="">
+            
+            <div class="info-box">
+
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Tomo Oga</h1>
+                    <span>ML/AI Researcher</span>
+                </div>
+
+                <div class="btn-group">
+                    <a href="resources/resume.pdf" download>
+                        <div class="btn">Download CV</div>
+                    </a>
+                    
+                    <a href="#contact">
+                        <div class="btn">Contact</div>
+                    </a>
+                </div>
+
+                <div class="socials">
+                    <a href="https://github.com/tomo-oga" target="_blank">
+                        <i class="fa-brands fa-github" id="gh-button"></i>
+                    </a>
+                    <a href="mailto:oga.t@northeastern.edu" target="_blank">
+                        <i class="fa-solid fa-envelope" id="email-button"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tomo-oga" target="_blank">
+                        <i class="fa-brands fa-linkedin" id="li-button"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <span>ML/AI Researcher @  Gyori Lab</span>
+                    <h3>June 2024 - Present</h3>
+                    <p>Contributed to the TrialSynth project by integrating clinical trial data across multiple registries into a computable knowledge graph, by standardizing biomedical entities into unique concept identifiers.</p>
+                </div>
+
+                <div class="grid-card">
+                    <span>Coding Instructor @ CodeWhiz</span>
+                    <h3>December 2022 - February 2023</h3>
+                    <p>Taught groups of around 20 students, ages 11-14, how to code in Python, Java, and Scratch through an interactive environment.</p>
+                </div>
+
+                
+            </div>
+
+            <img src="resources/profile-transformed.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-info">
+            <div class="project">
+                <div class="project-card">
+                    <span>Frame Interpolation using ConvLSTM and Residual Learning</span>
+                    <h3>December 2023 - February 2024</h3>
+                    <img src="resources/frame-interpolation.jpeg" alt="">
+                    <p>Recreated Suzuki <i>et. al's</i> work on "Residual Learning of Video Frame Interpolation Using ConvLSTM." Leveraged PyTorch's <i>nn.Module</i> library to build a model from scratch, and created a custom DataLoader for training.</p>
+                    <a href="https://github.com/tomo-oga/ConvLSTM-Frame-Interpolation"><button class="visit-btn">Checkout Repository</button></a>
+                    
+                </div>
+                <div class="project-card">
+                    <span>ConvLSTM for MLX</span>
+                    <h3>March - April 2024</h3>
+                    <p>Developed the Convolutional LSTM structure as dicussed in Shi <i>et al.'s</i> work of "Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting." for Apple's array framework library MLX, which utilizes the shared memory pool for Apple Sillicon CPU's and GPU's for efficient training.</p>
+                    <a href="https://github.com/tomo-oga/ConvLSTM-Shi-Et-Al"><button class="visit-btn">Checkout Repository</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-card">
+            <span>Let's Connect.</span>
+            <h3>Send me a message.</h3>
+            
+                
+            <form action="mailto:tomo.oga@example.com" method="post" enctype="text/plain", id="email-form">
+                <textarea name="email" rows="1" cols="80" placeholder="Your email here..." id="email-box"></textarea>
+                <textarea name="message" rows="5" cols="80" placeholder="Your message here..." id="message-box"></textarea>
+                
+                <input type="submit" value="Send" class="visit-btn">
+            </form>
+            
+            <div class="socials">
+                    <a href="https://github.com/tomo-oga" target="_blank">
+                        <i class="fa-brands fa-github" id="gh-button"></i>
+                    </a>
+                    <a href="mailto:oga.t@northeastern.edu" target="_blank">
+                        <i class="fa-solid fa-envelope" id="email-button"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tomo-oga" target="_blank">
+                        <i class="fa-brands fa-linkedin" id="li-button"></i>
+                    </a>
+                </div>
+        </div>
+    
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
