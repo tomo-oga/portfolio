@@ -3,182 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tomo-oga: My Portfolio</title>
+    <title>Tomo Oga · Molecular Machine Learning</title>
+    <meta name="description" content="Tomo Oga is a molecular machine learning researcher at Matterworks, working on foundation models, structure elucidation, and rigorous evaluation for molecules.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="name"><span>Tomo Oga</span></a>
-
-        <u1 class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-            
-        </u1>
-
-        <i class="fa-solid fa-bars" id="bar-icon"></i>
-
-        <a href="https://github.com/tomo-oga" target="_blank">
-            <button class="visit-btn">Visit Github</button>
-        </a>
+    <header class="nav">
+        <a href="#top" class="brand">Tomo Oga</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <a href="resources/resume.pdf" class="nav-cv" target="_blank">CV</a>
+        </nav>
     </header>
 
-    <section id="home" class="home">
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <!-- Front Side of Card -->
-            <div class="flip-card-front">
-                <div class="about-card">
-                    <a href="#about">
-                        <div class="photo-link" id="photo-link">
-                            <img src="resources/profile-transformed.jpeg" alt="">
-                            <div class="read-more">Read More...</div>
-                        </div>
-                    </a>
-                    <div class="info-box">
-                        <div class="text">
-                            <h3>Hi, I'm</h3>
-                            <h1>Tomo Oga</h1>
-                            <span>ML/AI Researcher</span>
-                        </div>
-                        <div class="btn-group">
-                            <a href="resources/resume.pdf" download>
-                                <div class="btn">Download CV</div>
-                            </a>
-                            <a href="#contact">
-                                <div class="btn">Contact</div>
-                            </a>
-                        </div>
-                        <div class="socials">
-                            <a href="https://github.com/tomo-oga" target="_blank">
-                                <i class="fa-brands fa-github" id="gh-button"></i>
-                            </a>
-                            <a href="mailto:oga.t@northeastern.edu" target="_blank">
-                                <i class="fa-solid fa-envelope" id="email-button"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/tomo-oga" target="_blank">
-                                <i class="fa-brands fa-linkedin" id="li-button"></i>
-                            </a>
-                        </div>
+    <main id="top">
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Molecular machine learning</p>
+                <h1>Tomo Oga</h1>
+                <p class="lede">
+                    I build machine learning models for molecules: foundation models that learn
+                    chemical structure, generative models that propose it <em>de novo</em>, and
+                    evaluations that check whether either generalizes. I'm currently a researcher at
+                    <a href="https://www.matterworks.ai" target="_blank" rel="noopener">Matterworks</a>.
+                </p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="#publications">Read the latest paper</a>
+                    <a class="btn" href="#contact">Get in touch</a>
+                </div>
+                <ul class="social">
+                    <li><a href="https://github.com/tomo-oga" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+                        GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/tomo-oga" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+                        LinkedIn</a></li>
+                    <li><a href="mailto:oga.t@northeastern.edu" aria-label="Email">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2 .9v11.6h16V6.4l-8 5.6-8-5.6ZM5.9 6h12.2L12 10.3 5.9 6Z"/></svg>
+                        Email</a></li>
+                </ul>
+            </div>
+
+            <figure class="hero-viz">
+                <canvas id="molecule-canvas" aria-label="Animation: molecules are drawn as graphs, pass messages along their bonds, and are pooled into an embedding vector" role="img"></canvas>
+                <figcaption>
+                    <span class="mono">molecule &rarr; graph &rarr; embedding</span>
+                    <span>caffeine &middot; aspirin &middot; dopamine</span>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="research" class="section">
+            <div class="section-head">
+                <p class="section-index">01</p>
+                <h2>Research</h2>
+            </div>
+
+            <div class="about">
+                <img src="resources/headshot.jpg" alt="Portrait of Tomo Oga" class="portrait" width="640" height="640">
+                <div class="about-text">
+                    <p>
+                        I'm a third-year Data Science and Mathematics student at Northeastern University and a
+                        machine learning researcher at Matterworks in Somerville, MA, where I work on
+                        foundation models for molecules.
+                    </p>
+                    <p>
+                        Most of chemical space is unexplored, and most of the molecules that matter in biology
+                        have never been characterized. I'm interested in models that learn chemistry well
+                        enough to reason about molecules outside their training data, and in evaluation that
+                        tells us honestly when they can.
+                    </p>
+                </div>
+            </div>
+
+            <div class="themes">
+                <article class="theme">
+                    <span class="mono theme-tag">representation learning</span>
+                    <h3>Molecular foundation models</h3>
+                    <p>General-purpose representations of molecules and their measurements that transfer across chemistries and downstream tasks.</p>
+                </article>
+                <article class="theme">
+                    <span class="mono theme-tag">generative models</span>
+                    <h3>Structure from data</h3>
+                    <p>Proposing molecular structures <em>de novo</em> from experimental observations, beyond what reference libraries already contain.</p>
+                </article>
+                <article class="theme">
+                    <span class="mono theme-tag">evaluation</span>
+                    <h3>Benchmarks that hold up</h3>
+                    <p>Structure-disjoint splits that still measure out-of-distribution generalization as molecular datasets grow by an order of magnitude.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="section-head">
+                <p class="section-index">02</p>
+                <h2>Publications</h2>
+            </div>
+
+            <article class="paper">
+                <p class="paper-venue mono">NeurIPS 2026 &middot; Workshop on AI Data Readiness for Scientific Discovery</p>
+                <h3 class="paper-title">Critical Mass: Structure-Disjoint Splits Drift With the Libraries They Are Built On</h3>
+                <p class="paper-authors">
+                    <strong>Tomo Oga</strong>, Devesh Shah, Cailum M. K. Stienstra, Gabriel Asher,
+                    Antonio H. de O. Fonseca, Niall O'Connor, Michael Widrich
+                </p>
+                <p class="paper-summary">
+                    Molecular ML measures out-of-distribution performance with structure-disjoint splits:
+                    threshold a pairwise distance, then keep connected components together. These rules are
+                    fixed at the scale of the library they were designed on. Taking spectrum-to-structure
+                    prediction as a case study, we make the exact MCES-10 split computable on 227,690
+                    molecules, nearly 8&times; the library it was set on. At this scale the similarity graph
+                    percolates: the holdout nearly vanishes, and what remains is systematically heavier.
+                    Naive large-library splits therefore conflate structural novelty with extrapolation to
+                    larger chemistry.
+                </p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-value">2,259&times;</span>
+                        <span class="stat-label">fewer integer programs than all-pairs MCES, with a provably identical partition</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">95.5%</span>
+                        <span class="stat-label">of a 227,690-molecule library falls in a single connected component</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">0.881</span>
+                        <span class="stat-label">probability that a held-out compound outweighs a training compound</span>
                     </div>
                 </div>
-            </div>
-            
-        </div>
-    </div>
-    </section>
 
-    <section id="about" class="about">
-        <h2 class="section-title">More About Me.</h2>
-        <div class="question-card">
-            <span>Who Am I?</span>
-            <p> Hi! My name is Tomo. I'm 19 years old and grew up in the greater boston area. I am a current second year at Northeastern University, and
-                I'm a passionate Data Science student at Northeastern University, driven by a deep interest in machine learning, knowledge
-                assembly, and data engineering. I am an ML/AI Research Assistant at the Gyori Lab for Computational Biomedicine, where I get to 
-                apply my interests and knowledge of artificial intelligence to real-life biomedical applications. 
-            </p>
-        </div>
-
-        <div class="question-card">
-            <span>What are you currently working on?</span>
-            <p>For Gyori Lab, currently I am trying to find methods to extract genetic mutations from clinical trial inclusion/exclusion criteria.
-                In this way, we could theoretically create BioEntities that reflect these genetic mutations, and provide better oncogenetic precision medicine
-                to patients with cancer. Outside of the lab, I had finished a project on providing an implementation on a ConvLSTM layer for Apple's array framework library known as MLX.
-                I am in the process of writing documentation, and cleaning up my code in order to publish it as a real library.
-            </p>
-        </div>
-
-        
-        
-    </section>
-    <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-info">
-            <div class="grid">
-                <div class="grid-card">
-                    <span>ML/AI Researcher @  Gyori Lab</span>
-                    <h3>June 2024 - Present</h3>
-                    <p>Contributed to the TrialSynth project by integrating clinical trial data across multiple registries into a computable knowledge graph, by standardizing biomedical entities into unique concept identifiers.</p>
+                <div class="split-bar" aria-label="Of the public library, 95.5 percent is one indivisible component and at most 4.5 percent can be held out">
+                    <div class="split-giant" style="width: 95.5%"><span>giant component &middot; 95.5%</span></div>
+                    <div class="split-holdout" style="width: 4.5%"></div>
                 </div>
+                <p class="split-caption mono">max achievable holdout under MCES-10 &rarr; 4.5%</p>
+            </article>
+        </section>
 
-                <div class="grid-card">
-                    <span>Coding Instructor @ CodeWhiz</span>
-                    <h3>December 2022 - February 2023</h3>
-                    <p>Taught groups of around 20 students, ages 11-14, how to code in Python, Java, and Scratch through an interactive environment.</p>
-                </div>
-
-                
+        <section id="experience" class="section">
+            <div class="section-head">
+                <p class="section-index">03</p>
+                <h2>Experience</h2>
             </div>
 
-            <img src="resources/profile-transformed.jpeg" alt="">
-        </div>
-    </section>
+            <ol class="timeline">
+                <li class="role">
+                    <div class="role-meta mono">Jul 2025 &ndash; present</div>
+                    <div class="role-body">
+                        <h3>Machine Learning Researcher <span>&middot; Matterworks</span></h3>
+                        <p class="role-place">Somerville, MA</p>
+                        <p>Building foundation models for molecules, trained on mass spectrometry data. My current work is on <em>de novo</em> structure elucidation and on how molecular models should be evaluated at scale.</p>
+                    </div>
+                </li>
+                <li class="role">
+                    <div class="role-meta mono">Jun 2024 &ndash; Jul 2025</div>
+                    <div class="role-body">
+                        <h3>Machine Learning Researcher <span>&middot; Gyori Lab for Computational Biomedicine</span></h3>
+                        <p class="role-place">Northeastern University, Boston, MA</p>
+                        <ul>
+                            <li>Integrated clinical trial data from multiple registries into a computable knowledge graph for <a href="https://github.com/tomo-oga/trialsynth" target="_blank" rel="noopener">TrialSynth</a>, grounding biomedical entities to standard identifiers.</li>
+                            <li>Proposed a MeSH prefix-tree restriction for named entity recognition, raising entity precision by about 17%.</li>
+                            <li>Explored LLM-based extraction of genomic variants from trial eligibility criteria for precision oncology.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="role">
+                    <div class="role-meta mono">2023 &ndash; 2027</div>
+                    <div class="role-body">
+                        <h3>B.S. Data Science and Mathematics <span>&middot; Northeastern University</span></h3>
+                        <p class="role-place">Khoury College of Computer Sciences</p>
+                    </div>
+                </li>
+            </ol>
 
-    <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="project-info">
-            <div class="project">
-                <div class="project-card">
-                    <span>Frame Interpolation using ConvLSTM and Residual Learning</span>
-                    <h3>December 2023 - February 2024</h3>
-                    <img src="resources/frame-interpolation.jpeg" alt="">
-                    <p>Recreated Suzuki <i>et. al's</i> work on "Residual Learning of Video Frame Interpolation Using ConvLSTM." Leveraged PyTorch's <i>nn.Module</i> library to build a model from scratch, and created a custom DataLoader for training.</p>
-                    <a href="https://github.com/tomo-oga/ConvLSTM-Frame-Interpolation"><button class="visit-btn">Checkout Repository</button></a>
-                    
-                </div>
-                <div class="project-card">
-                    <span>ConvLSTM for MLX</span>
-                    <h3>March - April 2024</h3>
-                    <p>Developed the Convolutional LSTM structure as dicussed in Shi <i>et al.'s</i> work of "Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting." for Apple's array framework library MLX, which utilizes the shared memory pool for Apple Sillicon CPU's and GPU's for efficient training.</p>
-                    <a href="https://github.com/tomo-oga/ConvLSTM-Shi-Et-Al"><button class="visit-btn">Checkout Repository</button></a>
-                </div>
+            <h3 class="subhead">Earlier projects</h3>
+            <ul class="projects">
+                <li>
+                    <a href="https://github.com/tomo-oga/ConvLSTM-Shi-Et-Al" target="_blank" rel="noopener">ConvLSTM for MLX</a>
+                    <span>Convolutional LSTM (Shi et al.) implemented for Apple's MLX array framework.</span>
+                    <span class="mono">2024</span>
+                </li>
+                <li>
+                    <a href="https://github.com/tomo-oga/ltc_rnn_mlx" target="_blank" rel="noopener">Liquid time-constant networks</a>
+                    <span>An MLX implementation of liquid time-constant recurrent networks.</span>
+                    <span class="mono">2024</span>
+                </li>
+                <li>
+                    <a href="https://github.com/tomo-oga/ConvLSTM-Frame-Interpolation" target="_blank" rel="noopener">Video frame interpolation</a>
+                    <span>Reproduction of residual ConvLSTM frame interpolation (Suzuki et al.) in PyTorch.</span>
+                    <span class="mono">2023</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-head">
+                <p class="section-index">04</p>
+                <h2>Contact</h2>
             </div>
-        </div>
-    </section>
-    <section id="contact" class="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-card">
-            <span>Let's Connect.</span>
-            <h3>Send me a message.</h3>
-            
-                
-            <form action="https://formspree.io/f/meoqezeb" method="post" id="email-form">
-                <input type="email" name="email" placeholder="Your email here..." id="email-box" required>
-                <textarea name="message" rows="5" cols="80" placeholder="Your message here..." id="message-box" required></textarea>
-                
-                <input type="submit" value="Send" class="visit-btn">
-            </form>
-            
-            <div class="socials">
-                    <a href="https://github.com/tomo-oga" target="_blank">
-                        <i class="fa-brands fa-github" id="gh-button"></i>
-                    </a>
-                    <a href="mailto:oga.t@northeastern.edu" target="_blank">
-                        <i class="fa-solid fa-envelope" id="email-button"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/tomo-oga" target="_blank">
-                        <i class="fa-brands fa-linkedin" id="li-button"></i>
-                    </a>
+
+            <div class="contact">
+                <div class="contact-text">
+                    <p>Interested in molecular ML, generative chemistry, or evaluation? I'm always glad to talk.</p>
+                    <p class="mono contact-links">
+                        <a href="mailto:oga.t@northeastern.edu">oga.t@northeastern.edu</a><br>
+                        <a href="https://github.com/tomo-oga" target="_blank" rel="noopener">github.com/tomo-oga</a><br>
+                        <a href="https://linkedin.com/in/tomo-oga" target="_blank" rel="noopener">linkedin.com/in/tomo-oga</a>
+                    </p>
                 </div>
-        </div>
-    
-    </section>
+                <form action="https://formspree.io/f/meoqezeb" method="post" class="contact-form" id="contact-form">
+                    <label>
+                        <span>Your email</span>
+                        <input type="email" name="email" required autocomplete="email">
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea name="message" rows="5" required></textarea>
+                    </label>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                    <p class="form-status" id="form-status" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>&copy; 2026 Tomo Oga</span>
+        <span class="mono">Boston, MA</span>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
