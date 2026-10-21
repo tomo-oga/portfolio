@@ -304,13 +304,14 @@ form.addEventListener("submit", async (e) => {
     let visible = true;
     new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }).observe(canvas);
 
-    const start = performance.now();
+    let start = null;
     function frame(now) {
+        requestAnimationFrame(frame);
+        start ??= now;
         if (visible) {
             lastT = ((now - start) / 1000) % (PERIOD * molecules.length);
             draw(lastT);
         }
-        requestAnimationFrame(frame);
     }
     requestAnimationFrame(frame);
 })();
