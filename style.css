@@ -278,7 +278,13 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 .paper-authors { margin: 16px 0 24px; color: var(--muted); font-size: 15px; }
 .paper-authors strong { color: var(--text); font-weight: 600; }
 
-.paper-summary { max-width: 44em; margin: 0 0 40px; }
+.paper-title a { text-decoration: none; }
+.paper-title a:hover { color: var(--accent); }
+
+.paper-summary { max-width: 44em; margin: 0 0 24px; }
+
+.paper-links { display: flex; gap: 12px; margin-bottom: 40px; }
+.paper-links .btn { padding: 7px 18px; font-family: var(--mono); font-size: 14px; }
 
 .stats {
     display: grid;
